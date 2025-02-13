@@ -1,6 +1,13 @@
-#container {
+ion-content{
+  display: flex;
   text-align: center;
+  align-items: center;
+}
 
+#container {
+  display: flex;
+  text-align: center;
+  align-items: center;
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +31,9 @@
 
 #container a {
   text-decoration: none;
+}
+
+ion-button{
+  --background: none !important; 
+  color: black;
 }

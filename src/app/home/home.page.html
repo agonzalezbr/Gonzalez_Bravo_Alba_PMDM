@@ -1,26 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Galdetegia Hau konponente baten bitartez egin
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-goiburukoa titulo="Galdetegia"></app-goiburukoa>
 
 <ion-content [fullscreen]="true">
   <!-- Irakurri galdetegiko galdera guztiak-->
   <ion-list>
     <ion-item>
       <!-- logotipoa gehitu -->
+      <ion-img src="assets\icon\volkswagen.jpg"></ion-img>
+      <ion-button (click)="onClick()">Responder</ion-button>
       <!-- ion-badge gehitu galdera asmatzekotan, saiakera zenbatzailea eta erakutsi okerrak izan diren saiakera kopurua
       -- 1-Asmatzen bada: "success" kolorea jarri eta erakutsi pantailako eskuineko partean (slot)
       -- 2-Akatsa bada: "danger" kolorea jarri eta erakutsi pantailaren eskuineko partean (slot)
       -- 3-Saikera okerrak egotekotan, erakutsi "warning" kolorearekin eta pantailaren eskuineko partean (slot)
       -->
-
       <!-- Gehitu botoiaren funtzionalitatea-->
-
     </ion-item>
+    <ion-item>
+      <ion-img src="assets\icon\apple.jpg"></ion-img>
+      <ion-button (click)="onClick()">Responder</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-img src="assets\icon\Shell.jpg"></ion-img>
+      <ion-button (click)="onClick()">Responder</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-img src="assets\icon\starbucks.jpg"></ion-img>
+      <ion-button (click)="onClick()">Responder</ion-button>
+    </ion-item>
+
   </ion-list>
   <!--Galdetagiaren botoia gehitu-->
-
+  <ion-button>Guardar cuestionario</ion-button>
 </ion-content>
